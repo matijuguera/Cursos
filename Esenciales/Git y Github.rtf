@@ -10318,7 +10318,7 @@ Mezclando ramas y resolviendo conflictos\par
 -git stash apply : Aplica el stash m\'e1s reciente. El que tiene num_stash=0.\par
 -git stash apply stash@\{num_stash\} : Aplica los cambios de un stash espec\'edfico.\par
 -git stash push -m "message": crea un stash con un respectivo mensaje\par
--git stash pop stash@\{n\}: larga los cambios de el stash mencionado\par
+-git stash pop stash@\{n\}: Aplica el stash m\'e1s reciente. El que tiene num_stash=0. Ademas lo elimina de nuestra stash list que a diferencia del apply no lo hace.\par
 -El cambio m\'e1s reciente (al crear un stash) SIEMPRE recibe el valor 0 y los que estaban antes aumentan su valor.\par
 -Al crear un stash tomar\'e1 los archivos que han sido modificados y eliminados. Para que tome un archivo creado es necesario agregarlo al Staging Area con git add [nombre_archivo].\par
 -Al aplicar un stash este no se elimina, es buena pr\'e1ctica eliminarlo.\par
