@@ -10347,8 +10347,73 @@ Mezclando ramas y resolviendo conflictos\par
 -git push origin master --tags: sube nuestros tags al repositorio remoto origin a la rama master\par
 -git push origin OTRA_RAMA: igual que git push origin master, pero a la rama que querramos...\par
 -git push origin --delete NOMBRE_DE_RAMA: Sirve para borrar la rama remota\par
+\b\fs24 Explorando la plataforma de GitHub\par
+\fs22 Vista desde adentro de un repositorio\b0\par
+-Unwatch: Nos permite que nos lleguen notificaciones si hay cambios en el repositorio\par
+-Not watching: Se te notifica cuando participas o mencionas\par
+-Ignoring: Nunca ser notificado\par
+-Star: Asi como en facebook se vive a base de likes, aqui se vive a base de estrellas, cuanto mas estrellas mas valorado es ese proyecto, y a su misma vez tiene muchos forks)\par
+-Fork: Indica la cantidad de gente que hizo copia de su repositorio para poderles enviar cambios\par
+-Podemos ver las estad\'edsticas de nuestro proyecto en Insights\par
+-contributors: Nos permite ver el avance de nuestro proyecto\par
+-traffic: Nos muestra el trafico de nuestro proyecto\par
+-punch card: Muestra los dias que a estado trabajando\par
+-network: Vemos el flujo de ramas\par
+-members: Nos muestra la gente que le a hecho fork a nuestro repositorio\par
+-dependents: Nos muestra si nuestro repositorio depende de otro, es decir de un super repositorio\par
+-Para proyectos complejos se puede hacer una \ldblquote dependecia\rdblquote  de repositorios o sub repositorios. Es como un proyecto dentro de otro pero es muy raro usarlos y de preferencia se recomienda un solo reposotorio.\par
+-Pull requests: Vemos una lista de pull requests\par
+-Issues: Son la forma en que manejamos nuestros problemas, bugs en github. Por ejemplo: hay un bug, este no va a ser reportado si no que lo que vamos a hacer es crear un issue comentando donde hay un problema, se hace de esta manera, ocurre en tal sistema operativo, etc\'85\par
+-Al crear un \ldblquote issue\rdblquote  o un \ldblquote pull request\rdblquote , github te permite incluir etiquetas en los mismos. Entre las etiquetas que nos pueden interesar a los que estamos comenzando a usar la plataforma se encuentran \ldblquote help wanted\rdblquote  y \ldblquote good first issue\rdblquote . Github anima a los desarrolladores a que marquen los \ldblquote issue\rdblquote  y los \ldblquote pull request\rdblquote  que son m\'e1s aptos para los que inician en este mundo con estas etiquetas y adicionalmente se pide a la comunidad que den un apoyo especial para estos issue/pull request. \'bfQui\'e9res comenzar a colaborar en un proyecto real en Github pero a\'fan te sientes inseguro con tus conocimientos? Haz una b\'fasqueda de est\'e1s etiquetas y encontrar\'e1s miles de oportunidades para hacer tu primer aporte.\par
 \par
-\par
+\b Settings del repositorio\b0\par
+-collaborators: Aqui se a\'f1ade a mas gente para que colabore en este proyecto\par
+-branches: Podemos cambiar la rama principal, y proteger ramas\par
+-CONSEJO: Protege siempre la rama master (Una vez protegida ningun cambio va a ir directamente a master tenemos que pasar por cierto proceso para que un codigo vaya a master) (Este proceso lo vemos dentro del curso)\par
+-pull request: Es una forma de tomar una rama alterna por ejemplo la rama RD y no mezclarla directamente con master. Si no enviar una solicitud de mezcla desde la rama RD a la master, asi alguien mas puede ver esa solicitud, algun colaborador, etc\'85Y se haga un code review\par
+-Webhooks: Es la forma de poderle agregar git code a otros servicios para que hagan un auto deploy\par
+-Integrations & servicies: Incluir otros servicios como amazon, y que pueden hacer uso de nuestro repositorio\par
+-Deploy keys: Son las llaves publicas ssh de tu servidor para poder hacer git pull desde el servidor, y tener tu c\'f3digo en producci\'f3n.\par
+\b\fs24 Proyectos de GitHub\par
+\b0\fs22 -El scrum de GitHub\b\fs24\par
+\b0\fs22 -Es como un trello/jira, se puede usar para estar mejor organizados, hacer un todo list, poner una lista de bugs, etc.\par
+-Son propios de los repositorios, habr\'eda que crear un proyecto por cada feature grande que necesitemos. Ej: WFC y Bandeja\par
+\b\fs24 Creando un template para issues \par
+\b0\fs22 -Una convencion de como participar\par
+-Creamos un nuevo archivos issue_template.md o pull_request_template.md\par
+\b\fs24 Ignorando archivos no deseados\par
+\b0\fs22 -Dependiendo el lenguaje: {{\field{\*\fldinst{HYPERLINK https://www.gitignore.io/ }}{\fldrslt{https://www.gitignore.io/\ul0\cf0}}}}\f0\fs22  \par
+-Si queremos ignorar algun archivo creamos un archivo llamado ".gitignore" y adentro ponemos la ruta de nuestros archivos y cuando pusheamos  nuestro archivo declarado no se subira.\par
+\b\fs24 Colabora a proyectos externos\par
+\b0\fs22 Un Pull Request sirve si hicimos un fork del repositorio, luego de esto hicimos cambios en nuestro proyecto clonado. Podemos compartir este cambio al repositorio principal y el creador va a aceptar o rechazar este cambio.\par
+\b\fs24 Issues y Milestones\par
+\b0 Issues: Es una categor\'eda en la que podemos reportar fallas, o mejoras a un repo determinado, al mismo le podemos asignar etiquetas, personas que lo pueden observar, entre otras cosas, que emulan la interactividad de las redes sociales (bueno github es en auna red social)\par
+Milestones: pero que pasa cuando un proyecto es demasiado complejo y hay demasiadas cosas que reportar, problemas que resolver, es all\'ed d\'f3nde entra en juego los Milestones que no es m\'e1s que una manera de agrupar issues o pull request, que tienen una o muchas caracter\'edsticas en com\'fan; siendo la analog\'eda que m\'e1s se corresponde a su caso la manera en que se organizan los libros en una biblioteca, la organizaci\'f3n por cotas ( de hecho milestones quiere decir cotas, al traducirlo al espa\'f1ol), en la que podemos encontrar libros de una tem\'e1tica en particular, gracias a una nomenclatura especifica, que hace que la b\'fasqueda bibliogr\'e1fica sea m\'e1s optima, debido a la gran cantidad de libros que existe en una biblioteca.\par
+\b GitHub Pages, hosting gratuito de archivos est\'e1ticos\par
+\b0 -Es un host personal para levantar nuestra pagina web\b\par
+\b0\fs22 -GitHub nos permite publicar nuestros proyectos a tr\'e1ves de GitHub Pages.\par
+-Los GitHubs pages almacenan c\'f3digo est\'e1tico (html, css, javascript).\par
+-No es posible hacerlo si nuestro proyecto tiene un backend\par
+-Podemos encontrar esta seccion el settings de nuestro repositorio\par
+\b\fs24 GitHub Pages, Dominios personalizados en Github\par
+\b0\fs22 -GitHub me permite personalizar la URL de mi GitHub Pages, primero debo comprar el dominio, nosotros usamos namecheap.com.\par
+-En el dashboard de namecheap vamos a manage nuestro dominio, vamos a configurar los DNS.\par
+-En GitHub vamos a settings y creamos un custom URL.\par
+-Creamos en el proyecto el archivo CNAME y en el ponemos la URL del dominio que compramos.\par
+-En advance DNS borramos lo que viene por defecto y agregamos Las ip de GitHub que son 192.168.252.153 y 192.168.252.154 con el type A Record y host solo @. Tambien creamos un type CNAME Record con host www y valor la pagina de github pages\par
+-Para enlazarse puede tardar hasta 2 dias\par
+\b\fs24 GitHub Pages, enviando la pagina a produccion\par
+\b0\fs22\par
+\b\fs24 GitHub Desktop, todo lo que necesitas de Git en una sola herramienta gr\'e1fica\par
+\b0\fs22 -Interfaz de escritorio en desktop.github.com para que puedas trabajar gr\'e1ficamente desde tu PC. Desarrollada en Electron. Lo primero que debes hacer es iniciar sesi\'f3n, luego clonar el proyecto.\par
+-Puedes ver todo el historial de tu proyecto de una manera muy amigable.\par
+-Quien hace los cambios, quien los aprueba.\par
+-Tambi\'e9n puedes navegar en todos tus repositorios.\par
+-Puedes hacer cambios.\par
+\b\par
+\b0\fs24\par
+\b\par
+\b0\fs22\par
 \par
 \par
 \par
